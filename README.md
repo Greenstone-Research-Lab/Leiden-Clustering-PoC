@@ -13,33 +13,40 @@ The pipeline consists of two primary modules:
 Follow these steps to replicate the environment and run the clustering pipeline on your local machine.
 
 ### 1. Clone the Repository
-bash
+```bash
 git clone [https://github.com/YOUR-USERNAME/Leiden-Clustering-PoC.git](https://github.com/YOUR-USERNAME/Leiden-Clustering-PoC.git)
 cd Leiden-Clustering-PoC
+```
 
 ### 2. Set Up the Virtual Environment
 
-bash
+```bash
 python -m venv venv
+```
 #### On Windows
+```bash
 .\venv\Scripts\activate
+```
 #### On Mac/Linux
+```bash
 source venv/bin/activate
+```
 
 
 ### 3. Install Dependencies
 
-bash
+```bash
 pip install -r requirements.txt
-
+```
 
 ### 4. Run the Pipeline
 
-bash
+```bash
 python data_generator.py
-
+```
 
 Then, execute the Leiden algorithm to detect and visualize the communities:
 
-bash
+```bash
 python leiden_clustering.py
+```
