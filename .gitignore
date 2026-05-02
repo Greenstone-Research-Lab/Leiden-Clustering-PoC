@@ -1,0 +1,7 @@
+﻿# Güvenlik ve Ortam Dosyaları
+.env
+venv/
+__pycache__/
+*.pyc
+.vs/
+.vscode/
