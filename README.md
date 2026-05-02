@@ -8,6 +8,18 @@ The pipeline consists of two primary modules:
 1.  **`data_generator.py`**: Generates a synthetic, planted partition graph. This simulates a real-world scenario with distinct "hidden" communities (e.g., echo chambers in social networks or thematic groups in datasets).
 2.  **`leiden_clustering.py`**: The core analytical engine. It converts the data to `igraph` format for speed, executes the Leiden algorithm to maximize modularity, and visualizes the detected clusters.
 
+## 📊 Leiden Communities Visualization
+
+Understanding the Visual Output
+Nodes (Circles): Represent the individual entities within the network.
+
+Edges (Lines): Indicate the relationships or connections established between these entities.
+
+Colors (Communities): Each distinct color represents a unique community autonomously detected by the Leiden algorithm. Nodes sharing the same color possess a significantly higher density of internal connections (modularity) compared to their connections with the rest of the network.
+
+Spatial Grouping: The visualization utilizes a force-directed algorithm (Spring Layout). This layout naturally pulls highly connected nodes closer together while pushing disparate groups apart, visually validating the mathematical clusters found by the algorithm.
+![Leiden Community Graph](./data/leiden_communities.png)
+
 ## 🚀 Quick Start
 
 Follow these steps to replicate the environment and run the clustering pipeline on your local machine.
